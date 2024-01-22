@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 김채영 - SW19 - 프론트 구현 평가 </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shoutcut icon" href="./images/icon/fv.svg">
+
+    <!-- swiper plugin - js -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.easing.1.3.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- ======== header ========== -->
+        <header>
+            <div class="headerInner">
+                <!-- pc menu, search, my -->
+                <ul class="searchLang_l">
+                    <li class="leftBtn">
+                        <a href="#">
+                            <img src="./images/icon/menu.svg" alt="메뉴">
+                        </a></li>
+                </ul>
+
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/icon/logo.svg" alt="SW19_logo">
+                    </a>
+                </h1>
+
+                <ul class="searchLang_r">
+                    <li class="rightBtn"><a href="#">
+                            <img src="./images/icon/my2.svg" alt="마이페이지 / 로그인">
+                        </a></li>
+                    <li class="rightBtn"> <a href="#">
+                            <img src="./images/icon/shopping.svg" alt="장바구니">
+                        </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- ======= main ====== -->
+        <main>
+            <!-- slide -->
+            <div id="main_slides">
+                <div class="swiper mySwiper">
+                    <!-- .swiper-wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <!-- 인디케이터 -->
+                    <div class="swiper-pagination slides-pagenation"></div>
+                </div>
+            </div>
+
+            <div class="main_PD">
+                <!-- h2 -->
+                <h2>A transitional scent of the green forestof <br>
+                    Wimbledon, London SW19 <br>
+                    that changes over time</h2>
+                <a>시간에 따라 변화하는, 런던 윔블던 숲 속의 향</a>
+
+                <!-- story, shop btn -->
+                <ul class="PDtext">
+                    <li class="PD_btn">
+                        <a href="https://sw19official.com/story.html" target="_blank">SW19 Story</a>
+                    </li>
+                    <li class="PD_btn">
+                        <a href="https://sw19official.com/product/list.html?cate_no=48" target="_blank">Shop</a>
+                    </li>
+                </ul>
+                <!--Waves Container-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.6" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="#f1f1f1" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.2)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#EBEBEB" />
+                        </g>
+                    </svg>
+                </div>
+                <!--Waves end-->
+            </div>
+
+            <section id="products">
+                <h3 class="blind">product</h3>
+                <!-- item -->
+                <!-- items - 1 -->
+                <!-- <div class="offI"> -->
+                <div class="items_1">
+                    <!-- left img -->
+                    <img src="./images/main/6am_M.jpg" alt="6am" class="mainImg showBox">
+                    <!-- center logo -->
+                    <img src="./images/main/6am.png" alt="6am logo" class="minLogo">
+                    <!-- product text -->
+                    <div class="Ptext1">
+                        <strong>WIMBLEDON FOREST AT DAWN IN THE MIST</strong>
+                        <span>
+                            <br><br>
+                            Just before the sunrise,<br>
+                            the mist of Wimbledon forest drifts along<br>
+                            and greets you as you take a stroll.<br>
+                            Feel the 6AM scent of the Wimbledon forest’s<br>
+                            glistening morning dew and moist soil.<br>
+                            <br>
+                            안개가 자욱한 윔블던 숲의 새벽
+                            <br>
+                            세상의 아침이 시작되기 전,<br>
+                            윔블던의 숲을 산책하는 당신에게<br>
+                            푸른 안개가 바람에 실려와 인사를 합니다.<br>
+                            이슬 머금은 잔디와 촉촉한 흙내음을 품은<br>
+                            윔블던의 새벽 6시를 느껴보세요.</span>
+                    </div>
+
+                    <!-- right img -->
+                    <img src="./images/main/6am_M2.jpg" alt="6am" class="mainImg_2 showBox">
+                    <!-- bottom btn -->
+                    <a href="https://sw19official.com/product/detail.html?product_no=13&cate_no=42&display_group=1"
+                        target="_blank">
+                        Discover more</a>
+                </div>
+
+                <!-- items - 2 -->
+                <div class="items_2">
+                    <!-- left img -->
+                    <img src="./images/main/12Noon_M2.jpg" alt="12Noon" class="mainImg showBox">
+                    <!-- center logo -->
+                    <img src="./images/main/12Noon.png" alt="12Noon logo" class="minLogo">
+                    <!-- product text -->
+                    <div class="Ptext2">
+                        <strong>TOUCH OF SUNLIGHT<br>ON WIMBLEDON LAKE AT NOON</strong>
+                        <span>
+                            <br><br><br>
+                            Midday, when the sunlight sparkles <br>
+                            on the surface of the lake,<br>
+                            the bouquet of a full bloom<br>
+                            iris and cool aqua scent<br>
+                            under the tree shade fills up the air.<br>
+                            Feel the scent of NOON at Wimbledon Park.<br>
+                            <br>
+                            햇살에 반짝이는 윔블던 호수의 정오
+                            <br>
+                            호수에 반짝이는 햇살 찬란한 낮 12시,<br>
+                            서늘한 나무그늘 아래 차가운 물 향과 햇살에 만개한<br>
+                            아이리스 꽃 향이 어우러진<br>
+                            윔블던 공원의 정오를 느껴보세요.<br>
+                        </span>
+                    </div>
+
+                    <!-- right img -->
+                    <img src="./images/main/12Noon_M.jpg" alt="12Noon" class="mainImg_2 showBox">
+                    <!-- bottom btn -->
+                    <a href="https://sw19official.com/product/detail.html?product_no=11&cate_no=42&display_group=1"
+                        target="_blank">
+                        Discover more</a>
+                </div>
+
+                <!-- items - 3 -->
+                <div class="items_3">
+                    <!-- left img -->
+                    <img src="./images/main/3pm_M.jpg" alt="3pm" class="mainImg showBox">
+                    <!-- center logo -->
+                    <img src="./images/main/3pm.png" alt="3pm logo" class="minLogo">
+                    <!-- product text -->
+                    <div class="Ptext3">
+                        <strong>GOLDEN SUN IN THE AFTERNOON<br>AT WIMBLEDON PARK</strong>
+                        <span>
+                            <br><br><br>
+                            While the forest’s morning dew dries away<br>
+                            in the beaming afternoon sunlight,<br>
+                            feel the scent of the fully blossomed<br>
+                            flowers in the park come together<br>
+                            with the freshness<br>
+                            of lemon floating on a cup of black tea<br>
+                            at 3PM in Wimbledon.
+
+                            <br><br>햇살이 내리쬐는 윔블던 공원의 오후<br><br>
+
+                            이슬 젖은 초록숲이<br>
+                            상큼한 햇살에 말라가는 윔블던의 오후.<br>
+                            공원에 만개한 꽃들의 향기와 홍차에 띄운<br>
+                            레몬 조각 향기가 어우러진<br>
+                            윔블던의 오후 3시를 느껴보세요.<br>
+                        </span>
+                    </div>
+                    <!-- right img -->
+                    <img src="./images/main/3pm_M2.jpg" alt="3pm" class="mainImg_2 showBox">
+                    <!-- bottom btn -->
+                    <a href="https://sw19official.com/product/detail.html?product_no=14&cate_no=42&display_group=1"
+                        target="_blank">
+                        Discover more</a>
+                </div>
+
+                <!-- items - 4 -->
+                <div class="items_4">
+                    <!-- left img -->
+                    <img src="./images/main/9pm_M2.jpg" alt="9pm" class="mainImg showBox">
+                    <!-- center logo -->
+                    <img src="./images/main/9pm.png" alt="9pm logo" class="minLogo">
+                    <!-- product text -->
+                    <div class="Ptext4">
+                        <strong>BONFIRE SPARKS THE EVENING OF THE WIMBLEDON</strong>
+                        <span>
+                            <br><br>
+                            The night in Wimbledon forest after dark.<br>
+                            The whispers of love travel through the crackling bonfire.<br>
+                            Feel the Wimbledon’s 9PM scent of the smokey<br>
+                            bonfire smoothly blended with sweet vanilla.<br><br>
+
+                            모닥불이 피어 오르는 윔블던 숲의 저녁<br><br>
+
+                            어둠이 내린 윔블던 숲의 저녁.<br>
+                            모닥불 타는 소리 사이로 들려오는<br>
+                            연인들의 달콤한 속삭임.<br>
+                            바닐라의 달콤함과<br>
+                            숲 속 모닥불의 스모키함이<br>
+                            어우러진 윔블던의 저녁 9시를 느껴보세요.<br>
+                        </span>
+                    </div>
+                    <!-- right img -->
+                    <img src="./images/main/9pm_M.jpg" alt="9pm" class="mainImg_2 showBox">
+                    <!-- bottom btn -->
+                    <a href="https://sw19official.com/product/detail.html?product_no=15&cate_no=42&display_group=1"
+                        target="_blank">
+                        Discover more</a>
+                </div>
+
+                <!-- items - 5 -->
+                <div class="items_5">
+                    <!-- left img -->
+                    <img src="./images/main/19Mid_M.jpg" alt="19Mid" class="mainImg showBox">
+                    <!-- center logo -->
+                    <img src="./images/main/19Mid.png" alt="19Mid logo" class="minLogo">
+                    <!-- product text -->
+                    <div class="Ptext5">
+                        <strong>MIDNIGHT, A SMALL LAMP LIGHTS UP A<br>COTTAGE IN WIMBLEDON PARK</strong>
+                        <span>
+                            <br><br>
+                            In the still of the night,<br>
+                            the soft moonlight surrounds the Wimbledon forest.<br>
+                            Feel the sensual MIDNIGHT<br>
+                            through mesmerizing touch and scent.<br>
+                            <br>
+                            인적이 드문 윔블던 공원 옆,<br>
+                            작은 등불 하나 켜진 어느 집의 자정<br>
+                            <br>
+                            은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤.<br>
+                            손 끝을 스치는 살결과 향기에 취한<br>
+                            센슈얼한 밤12시를 느껴보세요.
+                        </span>
+                    </div>
+                    <!-- right img -->
+                    <img src="./images/main/19Mid_M2.jpg" alt="19Mid" class="mainImg_2 showBox">
+                    <!-- bottom btn -->
+                    <a href="https://sw19official.com/product/detail.html?product_no=12&cate_no=42&display_group=1"
+                        target="_blank">
+                        Discover more</a>
+                </div>
+            </section>
+
+            <!-- ========= map ============ -->
+            <div class="map">
+                <!-- logo -->
+                <h4 class="logo">
+                    <a href="#">
+                        <img src="./images/map_logo.png" alt="SW19_map_logo">
+                    </a></h4>
+
+                <!-- Experience, Google Earth btn -->
+                <ul class="maptext">
+                    <li class="map_btn">
+                        <a href="https://www.google.com/maps/@51.4390411,-0.2060724,3a,75y,177.6h,112.58t/data=!3m8!1e1!3m6!1sAF1QipNVOoAsKrqSsZsIzMvSN9i6Erg6gUBjSqRKqOCr!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNVOoAsKrqSsZsIzMvSN9i6Erg6gUBjSqRKqOCr%3Dw203-h100-k-no-pi-0-ya49.77087-ro-0-fo100!7i8704!8i4352"
+                            target="_blank">Experience SW19</a>
+                    </li>
+                    <li class="map_btn">
+                        <a href="https://earth.google.com/web/search/Wimbledon+park/@51.4359333,-0.2101811,17.90890063a,628.90019534d,35y,287.91253015h,45t,0r/data=CnkaTxJJCiUweDQ4NzYwZjQ4ZmIyZTc2NTk6MHg4Yzc1NjBjODI2YTA5YzVhGWFekanMt0lAIQdgXts258q_Kg5XaW1ibGVkb24gcGFyaxgCIAEiJgokCX4y68BKLkpAEbFMe-6RLUpAGQqtfG7mlxNAIUJkXamOihNA"
+                            target="_blank">SW19 in Google Earth</a>
+                    </li>
+                    <!-- mobile google map -->
+                    <li class="map_btn">
+                        <a href="https://earth.google.com/web/search/Wimbledon+park/@51.4359333,-0.2101811,17.90890063a,628.90019534d,35y,287.91253015h,45t,0r/data=CnkaTxJJCiUweDQ4NzYwZjQ4ZmIyZTc2NTk6MHg4Yzc1NjBjODI2YTA5YzVhGWFekanMt0lAIQdgXts258q_Kg5XaW1ibGVkb24gcGFyaxgCIAEiJgokCX4y68BKLkpAEbFMe-6RLUpAGQqtfG7mlxNAIUJkXamOihNA"
+                            target="_blank">by Google Maps Street View</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- ========= footer =========== -->
+        <footer>
+            <div class="footerInner">
+                <!-- left copy -->
+                <ul class="Lcopyright">
+                    <li>
+                        <a>
+                            Company: (주)왁티 | Owner: 강정훈 / 06028 서울특별시 강남구 압구정로10길 7 (신사동) 3층 왁티 <br>
+                            Company Registration No.: 240-88-00299 / Telecommunication services registration No.:
+                            제2016-서울강남-03076호 <br>
+                            Email: support@sw19official.com / Tel: 1660-3252 </a>
+                    </li>
+                </ul>
+                <!-- Blogo -->
+                <div class="blogo">
+                    <a href="#"><img src="./images/icon/logo.svg" alt="하단로고"></a>
+                </div>
+
+                <!-- right copy -->
+                <ul class="Rcopyright">
+                    <li>
+                        <a>Copyright © SW19. All rights reserved.</a>
+                        <a href="#">이용약관</a>
+                        |
+                        <a href="#">개인정보처리방침</a>
+                        |
+                        <a href="#">대량주문 / 제휴문의</a>
+                    </li>
+                </ul>
+
+                <ul class="moblieCopy">
+                    <li>
+                        <a>
+                            Company: (주)왁티 | Owner: 강정훈 / 06028 서울특별시 강남구 압구정로10길 7 (신사동) 3층 왁티 <br>
+                            Company Registration No.: 240-88-00299 / Telecommunication services registration No.:
+                            제2016-서울강남-03076호 <br>
+                            Email: support@sw19official.com / Tel: 1660-3252 </a>
+                        <a><br><br>Copyright © SW19. All rights reserved. <br> </a>
+                        <a href="#">이용약관</a>
+                        |
+                        <a href="#">개인정보처리방침</a>
+                        |
+                        <a href="#">대량주문 / 제휴문의</a>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- 스와이퍼 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // swiper plugin
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        // =============등장액션: .showBox
+        const showBox = document.querySelectorAll(".showBox");
+
+        // 화면높이값 2/3 구하기
+        const screenH = window.innerHeight / 3 * 2;
+
+        // 현재 요소의 위치 (화면의 상단으로부터의 거리)를 반환하는 함수
+        const retVal = ele => ele.getBoundingClientRect().top;
+
+
+
+        //   등장 액션을 처리하는 함수
+        const showTit = x => {
+            // 현재 요소의 위치 (화면의 상단으로부터의 거리)를 가져옴
+            let xval = retVal(x);
+
+            // 만약 요소가 화면에 나타나는 중이라면
+            if (xval < screenH && xval > 0) {
+                // 요소가 화면에 나타날 때 opacity를 1로 변경하여 나타냄
+                x.classList.add("on");
+            }
+        };
+
+
+        window.addEventListener("scroll", () => {
+            // 스크롤 등장요소 개수만큼 for문 돌리기
+            for (let x of showBox) showTit(x);
+        });
+    </script>
+
+</body>
+
+</html>
