@@ -1078,24 +1078,24 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
         line-height: 1;
     }
 
-        /* items btn */
-        section#products .items_4 .Dbtn {
-            margin-top: 1200px;
-            display: flex;
-            text-align: center;
-        }
-    
-        section#products .items_4 .Dbtn li {
-            width: 160px;
-            height: 60px;
-            line-height: 60px;
-            font-size: 13px;
-        }
-    
-        section#products .items_4 .Dbtn .InDbtn a {
-            position: relative;
-            left: 0px;
-        }
+    /* items btn */
+    section#products .items_4 .Dbtn {
+        margin-top: 1200px;
+        display: flex;
+        text-align: center;
+    }
+
+    section#products .items_4 .Dbtn li {
+        width: 160px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 13px;
+    }
+
+    section#products .items_4 .Dbtn .InDbtn a {
+        position: relative;
+        left: 0px;
+    }
 
     /* items5 */
     div.items_5 {
@@ -1518,14 +1518,6 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
         left: 0px;
     }
 
-    /* section#products .items_5 a {
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 980px;
-        font-size: 13px;
-    } */
-
     /* map */
     .map {
         height: 670px;
@@ -1533,7 +1525,7 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
 
     .map h4.logo img {
         margin-top: 150px;
-        width: 115px;
+        width: 129px;
         height: 196px;
     }
 
