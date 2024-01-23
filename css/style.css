@@ -85,7 +85,7 @@ a {
 
 /* logo */
 #wrap header .headerInner h1.logo a img {
-    width: 70x;
+    width: 70px;
     height: 49px;
     margin-top: 45px;
     margin-left: 60px;
@@ -182,12 +182,7 @@ span.swiper-pagination-bullet-active {
     justify-content: center;
 }
 
-button {
-    background: 0 none;
-    border: 0 none;
-}
-
-.PDtext button {
+.PDtext li {
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -198,25 +193,17 @@ button {
     transition: all 0.5s;
 }
 
-.PDtext button:nth-child(1) {
+.PDtext li:nth-child(1) {
     border-radius: 20px 0px 0px 20px;
     background-color: #000;
 }
 
-.PDtext button:nth-child(2) {
+.PDtext li:nth-child(2) {
     border-radius: 0px 20px 20px 0px;
     background-color: #fff;
 }
 
-.PDtext button:nth-child(1):hover {
-    color: #fff;
-}
-
-.PDtext button:nth-child(2):hover {
-    color: #000;
-}
-
-.PDtext button:nth-child(1)::before {
+.PDtext li:nth-child(1)::before {
     content: "";
     z-index: 999;
     position: absolute;
@@ -224,36 +211,33 @@ button {
     transition: all 1s;
 }
 
-.PDtext button:nth-child(2)::before {
+.PDtext li:nth-child(2)::before {
     content: "";
     z-index: 999;
     position: absolute;
-    background: #e0e6e9;
+    background: #f5f0eb;
     transition: all 1s;
+    box-shadow: rgba(241, 230, 225, 0.9);
 }
 
 .PDtext .PD_btn {
     position: relative;
 }
 
-.PDtext .PD_btn:nth-child(1) a {
+.PDtext .PD_btn a {
     position: absolute;
+    top: 50%;
     z-index: 99999;
-    color: #fff;
     font-size: 16px;
-    /* left: 50%;
-    top: 50%; */
     transform: translate(-50%, -50%);
 }
 
+.PDtext .PD_btn:nth-child(1) a {
+    color: #fff;
+}
+
 .PDtext .PD_btn:nth-child(2) a {
-    position: absolute;
-    z-index: 99999;
     color: #000;
-    font-size: 16px;
-    /* left: 50%;
-    top: 50%; */
-    transform: translate(-50%, -50%);
 }
 
 .PDtext .PD_btn:nth-child(1):before {
@@ -274,13 +258,10 @@ button {
     border-bottom-right-radius: 50%;
 }
 
-.PDtext .PD_btn:nth-child(1):hover:before {
+.PDtext .PD_btn:hover:before {
     height: 200%;
 }
 
-.PDtext .PD_btn:nth-child(2):hover:before {
-    height: 200%;
-}
 
 /* wave */
 .waves {
@@ -374,7 +355,62 @@ section#products .items_1 .Ptext1 {
     letter-spacing: -0.54px;
 }
 
-section#products .items_1 a {
+section#products .items_1 .Dbtn {
+    margin-top: 730px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#products .items_1 .Dbtn li {
+    border-radius: 30px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+section#products .items_1 .Dbtn li::before {
+    content: "";
+    z-index: 999;
+    position: absolute;
+    background: #272727;
+    transition: all 1s;
+}
+
+.Dbtn .InDbtn {
+    position: relative;
+}
+
+.Dbtn .InDbtn a {
+    position: absolute;
+    /* top: 50%; */
+    z-index: 99999;
+    left: 36px;
+    /* transform: translate(-50%, -50%); */
+    /* transform: translate(38%); */
+    color: #fff;
+}
+
+.Dbtn .InDbtn:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.Dbtn .InDbtn:hover:before {
+    height: 200%;
+}
+
+/* section#products .items_1 a {
     width: 180px;
     height: 70px;
     border-radius: 30px;
@@ -388,7 +424,7 @@ section#products .items_1 a {
 
 section#products .items_1 a:hover {
     background: rgb(27, 27, 27);
-}
+} */
 
 /* items2 */
 div.items_2 {
@@ -429,7 +465,36 @@ section#products .items_2 .Ptext2 {
     letter-spacing: -0.54px;
 }
 
-section#products .items_2 a {
+/* btn */
+section#products .items_2 .Dbtn {
+    margin-top: 750px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#products .items_2 .Dbtn li {
+    border-radius: 30px;
+    background: #BC9C23;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+section#products .items_2 .Dbtn li::before {
+    content: "";
+    z-index: 999;
+    position: absolute;
+    background: #caaf4c;
+    transition: all 1s;
+}
+
+/* section#products .items_2 a {
     width: 180px;
     height: 70px;
     border-radius: 30px;
@@ -443,7 +508,7 @@ section#products .items_2 a {
 
 section#products .items_2 a:hover {
     background: #caaf4c;
-}
+} */
 
 /* items3 */
 div.items_3 {
@@ -484,7 +549,36 @@ section#products .items_3 .Ptext3 {
     letter-spacing: -0.54px;
 }
 
-section#products .items_3 a {
+/* btn */
+section#products .items_3 .Dbtn {
+    margin-top: 770px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#products .items_3 .Dbtn li {
+    border-radius: 30px;
+    background: #EC6B27;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+section#products .items_3 .Dbtn li::before {
+    content: "";
+    z-index: 999;
+    position: absolute;
+    background: #e68754;
+    transition: all 1s;
+}
+
+/* section#products .items_3 a {
     width: 180px;
     height: 70px;
     border-radius: 30px;
@@ -498,7 +592,7 @@ section#products .items_3 a {
 
 section#products .items_3 a:hover {
     background: #e68754;
-}
+} */
 
 
 /* items4 */
@@ -540,7 +634,37 @@ section#products .items_4 .Ptext4 {
     letter-spacing: -0.54px;
 }
 
-section#products .items_4 a {
+/* btn */
+section#products .items_4 .Dbtn {
+    margin-top: 740px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#products .items_4 .Dbtn li {
+    border-radius: 30px;
+    background: #936052;
+    overflow: hidden;
+    position: relative;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+section#products .items_4 .Dbtn li::before {
+    content: "";
+    z-index: 999;
+    position: absolute;
+    background: #a77b6f;
+    transition: all 1s;
+}
+
+/* section#products .items_4 a {
     width: 180px;
     height: 70px;
     border-radius: 30px;
@@ -554,7 +678,7 @@ section#products .items_4 a {
 
 section#products .items_4 a:hover {
     background: #a77b6f;
-}
+} */
 
 
 /* items5 */
@@ -596,7 +720,37 @@ section#products .items_5 .Ptext5 {
     letter-spacing: -0.54px;
 }
 
-section#products .items_5 a {
+/* btn */
+section#products .items_5 .Dbtn {
+    margin-top: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#products .items_5 .Dbtn li {
+    border-radius: 30px;
+    background: #8D8F90;
+    overflow: hidden;
+    position: relative;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+section#products .items_5 .Dbtn li::before {
+    content: "";
+    z-index: 999;
+    position: absolute;
+    background: #b5babd;
+    transition: all 1s;
+}
+
+/* section#products .items_5 a {
     width: 180px;
     height: 70px;
     border-radius: 30px;
@@ -610,11 +764,7 @@ section#products .items_5 a {
 
 section#products .items_5 a:hover {
     background: #b5babd;
-}
-
-.offI {
-    border: 1px solid red;
-}
+} */
 
 /* 스크롤 등장박스 */
 .minLogo {
@@ -735,7 +885,11 @@ footer .footerInner .blogo {
     width: 67px;
     height: 43.93px;
     margin-top: 65px;
-    margin-left: 463px;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-left: 463px; */
 }
 
 footer .footerInner .moblieCopy {
@@ -1075,6 +1229,20 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
     /* hader menu */
     #wrap header .headerInner {
         width: 90%;
+        height: 100px;
+    }
+
+    /* logo */
+    
+    #wrap header .headerInner ul li a img {
+        width: 22px; /* 기존 사이즈 28*28 */
+        height: 22px;
+        margin-top: 53px;
+    }
+    
+    #wrap header .headerInner ul.searchLang_r {
+        display: flex;
+        gap: 25px;
     }
 
     /* slider */
@@ -1116,23 +1284,28 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
     }
 
     .main_PD h2 {
-        font: 500 30px/1.2 'Playfair Display', serif;
+        font: 500 28px/1.2 'Playfair Display', serif;
         margin-bottom: 30px;
     }
 
-    .PD_btn a {
-        line-height: 50px;
-    }
+    .main_PD a {font-size: 16px;}
 
+    .PDtext .PD_btn a {
+        font-size: 12px;
+        line-height: 60;
+    }
+    
     .PD_btn:nth-child(1) {
-        width: 200px;
-        height: 50px;
+        width: 130px;
+        height: 60px;
     }
 
     .PD_btn:nth-child(2) {
-        width: 200px;
-        height: 50px;
+        width: 130px;
+        height: 60px;
     }
+
+
 
 
     /* products */
@@ -1168,13 +1341,42 @@ footer .footerInner .Rcopyright li a:nth-child(4):hover {
         line-height: 100%;
     }
 
-    section#products .items_1 a {
+    /* btn */
+    section#products .items_1 .Dbtn {
+    margin-top: 1040px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+    .Dbtn li {
+        border-radius: 30px;
+        background: #000;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        transition: all 0.5s;
+    }
+
+    .Dbtn .InDbtn a {
+        position: relative;
+        z-index: 99999;
+        left: 0px;
+        color: #fff;
+    }
+
+    /* section#products .items_1 a {
         width: 150px;
         height: 50px;
         line-height: 50px;
         margin-top: 1040px;
         font-size: 13px;
-    }
+    } */
 
     /* items2 */
     div.items_2 {
