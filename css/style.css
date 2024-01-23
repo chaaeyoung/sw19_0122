@@ -207,7 +207,7 @@ span.swiper-pagination-bullet-active {
     content: "";
     z-index: 999;
     position: absolute;
-    background: #1a1a1a;
+    background: #303030;
     transition: all 1s;
 }
 
@@ -379,7 +379,7 @@ section#products .items_1 .Dbtn li::before {
     content: "";
     z-index: 999;
     position: absolute;
-    background: #272727;
+    background: #303030;
     transition: all 1s;
 }
 
