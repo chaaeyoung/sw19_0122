@@ -21,9 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
     <script src="./js/jquery-1.11.3.min.js"></script>
-    <script src="./js/jquery.easing.1.3.min.js"></script>
+    <script src="/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
+
 
 <body>
     <div id="wrap">
@@ -31,13 +32,50 @@
         <header>
             <div class="headerInner">
                 <!-- pc menu, search, my -->
-                <ul class="searchLang_l">
+                <nav class="nav">
+                <ul id="menu" class="searchLang_l">
                     <li class="leftBtn">
                         <a href="#">
-                            <img src="./images/icon/menu.svg" alt="메뉴">
-                        </a></li>
+                        <img src="./images/icon/menu.svg" alt="메뉴">
+                        </a>
+                        <div class="sub-wrap">
+                        <ul>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">STORY</a></li>
+                            <li><a href="#">STORES</a></li>
+                            <li><a href="#">MEMBERHIP</a></li>
+                        </ul>
+                    </div>
+                    </li>
                 </ul>
+                <!-- sub -->
+                <div id="smenu_bar"></div>
+            </nav>
 
+
+            <!-- moblie menu -->
+            <div class="wrapper">
+                <div class="slide-open" id="slide-open">
+                    <img class="toggle" id="toggle" src="./images/icon/menu.svg" alt="메뉴">
+                </div>
+                
+                <div class="Mmenu">
+                     <div class="content">
+                       <!-- 컨텐츠 -->
+                     </div>
+                     <div class="slide" id="slide">
+                       <ul>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">STORES</a></li>
+                        <li><a href="#">MEMBERHIP</a></li>
+                       </ul>
+                     </div>
+                   </div>
+              </div>
+              <div class="bg"></div>
+
+                
                 <!-- logo -->
                 <h1 class="logo">
                     <a href="#">
@@ -82,13 +120,13 @@
 
                 <!-- story, shop btn -->
                 <ul class="PDtext">
-                <li class="PD_btn">
-                    <a href="https://sw19official.com/story.html" target="_blank">SW19 Story</a>
-                </li>
-                <li class="PD_btn">
-                    <a href="https://sw19official.com/product/list.html?cate_no=48" target="_blank">Shop</a>
-                </li>
-            </ul>
+                    <li class="PD_btn">
+                        <a href="https://sw19official.com/story.html" target="_blank">SW19 Story</a>
+                    </li>
+                    <li class="PD_btn">
+                        <a href="https://sw19official.com/product/list.html?cate_no=48" target="_blank">Shop</a>
+                    </li>
+                </ul>
 
                 <!--Waves Container-->
                 <div>
@@ -144,10 +182,10 @@
                     <!-- bottom btn -->
                     <ul class="Dbtn">
                         <li class="InDbtn">
-                    <a href="https://sw19official.com/product/detail.html?product_no=13&cate_no=42&display_group=1"
-                        target="_blank">
-                        Discover more</a>
-                      </li>
+                            <a href="https://sw19official.com/product/detail.html?product_no=13&cate_no=42&display_group=1"
+                                target="_blank">
+                                Discover more</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -183,9 +221,9 @@
                     <!-- bottom btn -->
                     <ul class="Dbtn">
                         <li class="InDbtn">
-                    <a href="https://sw19official.com/product/detail.html?product_no=11&cate_no=42&display_group=1"
-                        target="_blank">
-                        Discover more</a>
+                            <a href="https://sw19official.com/product/detail.html?product_no=11&cate_no=42&display_group=1"
+                                target="_blank">
+                                Discover more</a>
                         </li>
                     </ul>
                 </div>
@@ -223,9 +261,9 @@
                     <!-- bottom btn -->
                     <ul class="Dbtn">
                         <li class="InDbtn">
-                    <a href="https://sw19official.com/product/detail.html?product_no=14&cate_no=42&display_group=1"
-                        target="_blank">
-                        Discover more</a>
+                            <a href="https://sw19official.com/product/detail.html?product_no=14&cate_no=42&display_group=1"
+                                target="_blank">
+                                Discover more</a>
                         </li>
                     </ul>
                 </div>
@@ -261,9 +299,9 @@
                     <!-- bottom btn -->
                     <ul class="Dbtn">
                         <li class="InDbtn">
-                    <a href="https://sw19official.com/product/detail.html?product_no=15&cate_no=42&display_group=1"
-                        target="_blank">
-                        Discover more</a>
+                            <a href="https://sw19official.com/product/detail.html?product_no=15&cate_no=42&display_group=1"
+                                target="_blank">
+                                Discover more</a>
                         </li>
                     </ul>
                 </div>
@@ -297,9 +335,9 @@
                     <!-- bottom btn -->
                     <ul class="Dbtn">
                         <li class="InDbtn">
-                    <a href="https://sw19official.com/product/detail.html?product_no=12&cate_no=42&display_group=1"
-                        target="_blank">
-                        Discover more</a>
+                            <a href="https://sw19official.com/product/detail.html?product_no=12&cate_no=42&display_group=1"
+                                target="_blank">
+                                Discover more</a>
                         </li>
                     </ul>
                 </div>
