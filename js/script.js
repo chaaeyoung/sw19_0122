@@ -35,12 +35,12 @@ $(function () {
                     $(".toggle").removeClass('on');
                     $("#slide").removeClass('on');
                     $(".bg").removeClass('overlay'); // 슬라이드가 닫힐 때 overlay 클래스 제거
-                    // $(".Xbtn").hide();
+                    $(".Xbtn").removeClass('show');
                 } else {
                     $("#toggle").addClass('on');
                     $("#slide").addClass('on');
                     $(".bg").addClass('overlay'); // 슬라이드가 열릴 때 overlay 클래스 추가
-                    // $(".Xbtn").show();
+                    $(".Xbtn").addClass('show');
                 }
             });
         
@@ -54,6 +54,7 @@ $(function () {
                     $(".toggle").removeClass('on');
                     $("#slide").removeClass('on');
                     $(".bg").removeClass('overlay'); // 슬라이드가 닫힐 때 overlay 클래스 제거
+                    $(".Xbtn").removeClass('show');
                 }
             });
 
